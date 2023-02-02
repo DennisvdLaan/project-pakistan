@@ -2,7 +2,7 @@ from flask import Flask, request, flash, url_for, redirect, render_template
 from flask_mysqldb import MySQL
 from datetime import datetime
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
