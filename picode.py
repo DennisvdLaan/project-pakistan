@@ -61,4 +61,4 @@ with app.app_context():
             mysql.connection.commit()
             cursor.close()
             return f"Done!!"
-    app.run(host='localhost', port=5000)
+    app.run(host='0.0.0.0', port=5000)
