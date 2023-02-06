@@ -25,9 +25,9 @@ with app.app_context():
     cursor.close()
 
     
-    @app.route('/form')
+    @app.route('/')
     def form():
-        return render_template('form.html')
+        return render_template('index.html')
 
     @app.route('/login', methods = ['POST', 'GET'])
     def login():
